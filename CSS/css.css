@@ -4,6 +4,7 @@
 }
 
 nav{
+    display: flex;
     position: sticky;
     top: 0cap;
     text-align: right;
@@ -52,7 +53,7 @@ header {
 
 main{
     font-family: Arial, Helvetica, sans-serif;
-    
+    display: flex;
     text-align: center;
     color: white;
 }
@@ -62,6 +63,7 @@ footer{
     margin: 5%;
     background-color: rgb(22,22,22);
     letter-spacing: 2px;
+    display: flex;
 }
 
 form{

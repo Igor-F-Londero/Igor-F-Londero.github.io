@@ -54,13 +54,14 @@ header {
 
 
 main{
-     font-family: "Martian Mono", monospace;
+  display: flex;
+    font-family: "Martian Mono", monospace;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-     color: white;
+  color: white;
 
 }
 h1{
