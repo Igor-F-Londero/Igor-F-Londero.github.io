@@ -94,7 +94,7 @@ input{
 
 h1{
     
- 
+  display: flex;
   font-family: "Martian Mono", monospace;
   font-optical-sizing: auto;
   font-weight: <weight>;
