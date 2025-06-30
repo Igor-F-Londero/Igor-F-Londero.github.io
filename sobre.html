@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre </title>
-  <link href="CSS/css.css" rel="stylesheet">
+  <link href="CSS/sobre.css" rel="stylesheet">
 
 </head>
 
@@ -13,26 +13,30 @@
     <a href="index.html">
       <img src="IMG/img botão home.png" width="40" height="40" alt="home-botão"> 
     </a>
-    <a class="borda" href="hobby.html"> HOBBY</a>
-    <a class="borda" href="projetos.html">PROJETOS</a>
-    <a class="borda" href="playlist.html">Construindo...</a>
+    <a class="borda" href="hobby.html"> Hobby</a>
+    <a class="borda" href="projetos.html">Projetos</a>
+    <a class="borda" href="album.html">Construindo...</a>
 
   </nav>
+  <br>
   <header>
     <h1 class="h1h"> Sobre</h1>
   </header>
+  <br>
   <main>
-    <article>
+    <article class="article-cima">
      
-      <h3 class="playfair-display">Nesta página você vai me conhecer melhor</h3>
-      
+      <br>
+      <br>
       <br>
       <br>
       
-      <img src="IMG/perfil.jpg" alt="imagem" width="25%">
+      <img src="IMG/perfil.jpg" alt="imagem" width="68%">
     
     </article>
-
+<br>
+<br>
+<br>
     <article>
       
       <h1> Um pouco sobre mim: </h1>
@@ -44,47 +48,52 @@
 
       <h3>Como cheguei até a programação:</h3>
 
-      <p>Sempre gostei de jogar videogame, e isso despertou minha curiosidade sobre como eles eram feitos. Agora, na faculdade, desenvolvi um grande interesse em entender como diversos sistemas diferentes são criados.</p>
+      <p>Sempre gostei de jogar videogame, e isso despertou minha curiosidade sobre como eles eram feitos. Agora, na faculdade, desenvolvi um grande interesse em entender como diferentes sistemas  são criados.</p>
 
      
-    </article>
+   
+  </article>
   </main>
-
+  <br>
+  <article class="article-baixo">
    <h1 class="h1h"> Entre em contato</h1>
   <form>
    <label for="primeiro nome">Primeiro nome: </label>
       <input type="text" id="primeiro nome" name="Primeiro nome"><br>
-            <br>
+            
     <label for="sobrenome">Sobrenome: </label>
       <input type="text" id="sobrenome" name="sobrenome">
-      <br>
-      <br>
-        <p>Feedback do site:</p> 
+        
+      <p class="p-form">Feedback do site:</p> 
       <label for="ruim">Ruim</label>
         <input type="radio" id="ruim" name="feedback" value="ruim">
-    <br>
-    <br>
-      <label for="razoavel">Razoável</label>
+
+    
+        
+      
+    <label for="razoavel">Razoável</label>
         <input type="radio" id="razoavel" name="feedback">        
-    <br>
-    <br>
-      <label for="bom">Bom</label>
-        <input type="radio" id="Bom" name="feedback">
+    
         <br>
-        <p>O que preciso melhorar?</p> 
+      
+    <label for="bom">Bom</label>
+        <input type="radio" id="Bom" name="feedback">
+
+        <p class="p-form">O que preciso melhorar?</p> 
 
           <textarea name="mensagem" rows="10" cols="30"> Digite aqui...</textarea>
-           <br>
-            <button type="button" onclick="alert('Feedback enviado!')">Enviar</button>
-
+           
+            <button class="borda" type="submit" onclick="alert('Feedback enviado!')">Enviar</button>
   </form>
+  <br>
+  <br>
+  <br>
+  </article>
   
   
   
   
-  
-  
-  
+  <br>
   
   <footer>
      <a href="https://github.com/Igor-F-Londero" target="_blank">
@@ -95,9 +104,7 @@
         <img src="IMG/logo steam button.png" width="40" alt="steam">
       </a>
       
-      <a>
-        <img src="IMG/5d3bb1c633028cafce74e3ba7db483b3.png" width="30" height="" alt="whats">  54-994875628
-      </a>
+      <a class="gmail"><img src="IMG/icons8-gmail-novo-48.png" width="35">igorflondero@gmail.com</a>
     
   
   </footer>
