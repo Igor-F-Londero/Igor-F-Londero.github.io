@@ -30,7 +30,8 @@ a{
     border-radius: 15px;
     color: whitesmoke;
     background-color: rgb(41, 84, 95);
-    justify-content: center;
+    justify-content: right;
+    text-align: right;
 }       
 
 .h1h {
@@ -156,4 +157,99 @@ img{
     border-color: rgb(41, 84, 95);
     
    
+}
+
+/* === Tema Claro === */
+body.temaClaro {
+  background-color: gainsboro;
+}
+
+body.temaClaro * {
+  background-color: inherit;
+  color: black;
+}
+
+/* Links */
+body.temaClaro a {
+  color: black;
+}
+
+/* Cabeçalho */
+body.temaClaro header {
+  background-color: gainsboro !important;
+  color: black !important;
+  background-image: url(/IMG/header\ img.png); /* mantém imagem */
+  text-shadow: none !important;
+}
+
+/* Título no header */
+body.temaClaro .h1h {
+  color: whitesmoke !important;
+  background-color: transparent !important;
+}
+
+/* Navegação */
+body.temaClaro nav {
+  background-color: rgb(211, 211, 211) !important;
+  color: black !important;
+}
+
+/* Borda destaque */
+body.temaClaro .borda {
+  background-color: rgb(41, 84, 95) !important;
+  color: whitesmoke !important;
+  border-color: rgb(41, 84, 95) !important;
+  justify-content: right !important;
+  text-align: right !important;
+}
+
+/* Imagens */
+body.temaClaro img {
+  border-color: rgb(41, 84, 95) !important;
+}
+
+/* Seções */
+body.temaClaro .article-baixo,
+body.temaClaro .article-cima {
+  background-color: #e0e0e0 !important;
+  color: black !important;
+  border-color: rgb(41, 84, 95) !important;
+}
+
+/* Main */
+body.temaClaro main {
+  color: black;
+}
+
+/* Formulário */
+body.temaClaro form,
+body.temaClaro input,
+body.temaClaro textarea {
+  background-color: white !important;
+  color: black !important;
+}
+
+/* Footer */
+body.temaClaro footer {
+  background-color: rgb(41, 84, 95) !important;
+  color: whitesmoke !important;
+}
+
+body.temaClaro footer * {
+  background-color: inherit !important;
+  color: whitesmoke !important;
+}
+
+/* Botões */
+body.temaClaro button {
+  background-color: rgb(41, 84, 95) !important;
+  color: whitesmoke !important;
+}
+
+body.temaClaro .h1h{
+        color: white !important;
+    background-color: transparent !important;
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
