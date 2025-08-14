@@ -6,13 +6,13 @@
 .container{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
   justify-content: center;
   gap:10px;
 }
-
 nav{
     padding: 2%;
-    
     position: sticky;
     top: 0cap;
     text-align: center;
@@ -22,10 +22,7 @@ nav{
     font-style: normal;
     font-variation-settings:
     "wdth" 100;
-    
-
-
-}
+  }
  
 
 

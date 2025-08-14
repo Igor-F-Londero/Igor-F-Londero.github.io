@@ -8,21 +8,28 @@
   flex-direction: row;
   justify-content: center;
   gap:10px;
+  align-items: center;
+  text-align: center;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Empilha os itens */
+    gap: 20px; /* Mais espaço entre eles */
+  }
+}
+
 nav{
-    display: flexbox;
+    display: flex;
     position: sticky;
-    top: 0cap;
     text-align: center;
+    justify-content: center;
     font-family: "Martian Mono", monospace;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
     font-variation-settings:
     "wdth" 100;
-    
-
-
 }
    
 
