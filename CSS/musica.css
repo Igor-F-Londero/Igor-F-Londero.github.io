@@ -9,6 +9,12 @@
   gap:10px;
 }
 
+.email{
+      
+    text-decoration: none;
+    color: whitesmoke;
+}
+
 nav{
     padding: 2%;
     display: flexbox;

@@ -21,11 +21,17 @@ nav{
     font-style: normal;
     font-variation-settings:
     "wdth" 100;
+
     
 
 
 }
-   
+
+.email{
+      
+    text-decoration: none;
+    color: whitesmoke;
+}
 
 a{
     color: white;

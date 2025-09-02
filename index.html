@@ -4,51 +4,113 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio pessoal</title>
-  <link href="CSS/index.css" rel="stylesheet" />
+  <link href="CSS/index.css" rel="stylesheet">
+  
+  <!-- Bootstrap CSS (framework de estilos responsivos) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
- <div id="relogio" class="relogio">00:00:00</div>
-<div class="container">
- <nav>  
-    <a  href="index.html"><img  src="IMG/img botão home.png" width="40" height="40" alt="home-botão"></a>
-    <a class="borda" href="sobre.html">Sobre</a>
-    <a class="borda" href="hobby.html">Hobby</a>
-    <a class="borda" href="projetos.html">Projetos</a>
-    <a class="borda" href="album.html">Construindo...</a>
-    <button class="borda" id="temaclaro">ligar luzes</button>
-  </nav>
+<body class="bg-dark text-light"><!-- bg-dark = fundo escuro | text-light = texto branco -->
+
+<!-- Cabeçalho do relógio -->
+<div class="bg-dark text-center p-2">
+  <!-- text-center = centraliza o conteúdo -->
+  <!-- p-2 = padding (espaçamento interno) -->
+  <div id="relogio" class="relogio fs-4">00:00:00</div>
+  <!-- fs-4 = font-size 4 (tamanho da fonte do Bootstrap) -->
 </div>
- <br>
- 
-  <header>
 
-    <h1 class="h1h">Seja Bem-vindo ao <br> meu Portfólio</h1>
-  </header> 
+<!-- Navbar Bootstrap (menu de navegação fixo no topo) -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm bg-dark">
+  <!-- navbar = barra de navegação -->
+  <!-- navbar-expand-lg = menu expande em telas grandes, colapsa em pequenas -->
+  <!-- navbar-dark = estilo para fundo escuro -->
+  <!-- fixed-top = fica fixo no topo ao rolar a página -->
+  <!-- shadow-sm = adiciona uma leve sombra -->
+  <!-- bg-dark = fundo escuro -->
+  
+  <div class="container bg-dark"><!-- container = centraliza e dá margem lateral automática -->
+    
+    <!-- Marca/Logo -->
+    <a class="navbar-brand fw-bold bg-dark text-primary" href="index.html">
+      <!-- navbar-brand = define logo/marca -->
+      <!-- fw-bold = fonte em negrito -->
+      <!-- text-primary = cor azul padrão Bootstrap -->
+      <img src="IMG/img botão home.png" width="40" height="40" alt="home-botão" class="img-fluid">
+      <!-- img-fluid = imagem responsiva (escala automaticamente) -->
+    </a>
 
-  <main>
-    <p>Olá! Meu nome é Igor, estou cursando  Analise e Desenvolvimento de Sistemas (2/6).
-      <br>
-    Atualmente estou me concentrando em realizar pequenos projetos com o que venho aprendendo.<br>Tenho interese em Desenvolvimento back-end</p>
-   <img src="IMG/Imagem do WhatsApp de 2025-07-27 à(s) 19.49.09_a2cb1b77.jpg" alt="perfil" width="15%">
+    <!-- Botão hamburger (mostrado em telas pequenas) -->
+    <button class="navbar-toggler bg-dark " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <!-- navbar-toggler = botão de abrir/fechar menu colapsado -->
+      <span class="navbar-toggler-icon bg-dark"></span>
+    </button>
+
+    <!-- Itens do menu (colapsam em telas pequenas) -->
+    <div class="collapse navbar-collapse bg-dark" id="navbarNav">
+      <!-- collapse navbar-collapse = comportamento colapsável -->
+      <ul class="navbar-nav ms-auto bg-dark">
+        <!-- navbar-nav = lista de navegação -->
+        <!-- ms-auto = margin-start auto → empurra itens para a direita -->
+        
+        <li class="nav-item"><a class="nav-link bg-dark" href="sobre.html">Sobre</a></li>
+        <!-- nav-item = item da navbar -->
+        <!-- nav-link = link estilizado pela navbar -->
+        
+        <li class="nav-item"><a class="nav-link bg-dark" href="hobby.html">Hobby</a></li>
+        <li class="nav-item"><a class="nav-link bg-dark" href="projetos.html">Projetos</a></li>
+        <li class="nav-item"><a class="nav-link bg-dark" href="album.html">Playlist</a></li>
+        
+        <li class="nav-item bg-dark">
+          <button style="border: solid; border-color: rgb(41, 84, 95); background-color: rgb(41, 84, 95);" id="temaclaro" class="btn btn-sm btn-primary ms-2">Ligar luzes</button>
+          <!-- btn = botão Bootstrap -->
+          <!-- btn-sm = botão pequeno -->
+          <!-- btn-primary = estilo azul -->
+          <!-- ms-2 = margin-start (margem à esquerda) 2 -->
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Cabeçalho principal -->
+<header class="text-center mt-5 pt-5">
+  <!-- text-center = centraliza texto -->
+  <!-- mt-5 = margin-top (margem superior grande, espaço para compensar a navbar fixa) -->
+  <!-- pt-5 = padding-top (espaçamento interno superior) -->
+  <h1 class="h1h">Seja Bem-vindo ao <br> meu Portfólio</h1>
+</header> 
+
+<!-- Conteúdo principal -->
+<main class="container text-center my-4 bg-dark">
+  <!-- container = centraliza conteúdo -->
+  <!-- text-center = centraliza texto -->
+  <!-- my-4 = margin vertical (topo/baixo) -->
+  <p class="lead">
+    <!-- lead = texto de destaque (um pouco maior) -->
+     Me chamo Igor Gabriel , estou cursando Análise e Desenvolvimento de Sistemas (2/6).<br>
+    Atualmente estou me concentrando em realizar pequenos projetos com o que venho aprendendo.<br>
+    Tenho interesse em Desenvolvimento back-end
+  </p>
+  <img class="img-fluid rounded shadow w-50" src="IMG/Imagem do WhatsApp de 2025-07-27 à(s) 19.49.09_a2cb1b77.jpg" alt="perfil">
+  <!-- img-fluid = imagem responsiva -->
+  <!-- rounded = bordas arredondadas -->
+  <!-- shadow = sombra -->
+  <!-- w-50 = largura 50% do container -->
 </main>
 
-<footer id="blue">
-  <a href="https://github.com/Igor-F-Londero" target="_blank">
-    <img src="IMG/github.png" width="33" alt="github">
-  </a>
-   
-  <a href="https://www.linkedin.com/in/igor-gabriel-folle-londero-a1181937a/" target="_blank">
-    <img src="IMG/—Pngtree—linkedin white icon_3570423.png" width="40" alt="linkedin">
-  </a>
-  
-  <a href="https://steamcommunity.com/profiles/76561198438161385" target="_blank">
-    <img src="IMG/logo steam button.png" width="40" alt="steam">
-  </a>
-  
-  <a>
-    <img src="IMG/gmail.png" width="35">igorflondero@gmail.com
-  </a>
+<!-- Rodapé -->
+<footer class=" text-center py-3">
+  <!-- bg-dark = fundo escuro -->
+  <!-- text-center = centraliza conteúdo -->
+  <!-- py-3 = padding vertical -->
+  <a href="https://github.com/Igor-F-Londero" target="_blank"><img src="IMG/github.png" width="33" alt="github"></a>
+  <a href="https://www.linkedin.com/in/igor-gabriel-folle-londero-a1181937a/" target="_blank"><img src="IMG/—Pngtree—linkedin white icon_3570423.png" width="40" alt="linkedin"></a>
+  <a href="https://steamcommunity.com/profiles/76561198438161385" target="_blank"><img src="IMG/logo steam button.png" width="40" alt="steam"></a>
+  <a class="email" href="mailto:igorflondero@gmail.com"><img src="IMG/gmail.png" width="35" alt="gmail">E-mail</a>
 </footer>
+
+<!-- Bootstrap JS (necessário para navbar e componentes interativos) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 <script src="/JS/main.js"></script>
 </body>
 </html>

@@ -3,96 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre </title>
+  <title>Sobre</title>
   <link href="CSS/sobre.css" rel="stylesheet">
 
+  <!-- Bootstrap CSS (framework de estilos responsivos) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+<body class="bg-dark text-light"><!-- bg-dark = fundo escuro | text-light = texto claro -->
 
-<body>
- <div class="container">
-  <nav>
-    <a href="index.html">
-      <img src="IMG/img botão home.png" width="40" height="40" alt="home-botão"> 
+<!-- Navbar Bootstrap (menu de navegação fixo no topo) -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm bg-dark">
+  <div class="container bg-dark">
+    <!-- Marca/Logo -->
+    <a class="navbar-brand fw-bold text-primary bg-dark" href="index.html">
+      <img src="IMG/img botão home.png" width="40" height="40" alt="home-botão" class="img-fluid">
     </a>
-    <a class="borda" href="hobby.html"> Hobby</a>
-    <a class="borda" href="projetos.html">Projetos</a>
-    <a class="borda" href="album.html">Construindo...</a>
-    <button class="borda" id="temaclaro">ligar luzes</button>
-  </nav>
- </div>
-<br>
 
-<header>
-    <h1 class="h1h"> Sobre</h1>
+    <!-- Botão hamburger (colapsa em telas pequenas) -->
+    <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavSobre">
+      <span class="navbar-toggler-icon bg-dark"></span>
+    </button>
+
+    <!-- Itens do menu -->
+    <div class="collapse navbar-collapse bg-dark" id="navbarNavSobre">
+      <ul class="navbar-nav ms-auto bg-dark">
+        <li class="nav-item"><a class="nav-link bg-dark" href="hobby.html">Hobby</a></li>
+        <li class="nav-item"><a class="nav-link bg-da bg-dark" href="projetos.html">Projetos</a></li>
+        <li class="nav-item"><a class="nav-link bg-da bg-dark" href="album.html">Construindo...</a></li>
+        <li class="nav-item bg-dark">
+          <button id="temaclaro" class="btn btn-sm btn-primary ms-2" 
+                  style="border: solid; border-color: rgb(41, 84, 95); background-color: rgb(41, 84, 95);">
+            Ligar luzes
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Cabeçalho principal -->
+<header class="text-center mt-5 pt-5">
+  <h1 class="h1h">Sobre</h1>
 </header>
-<br>
 
-<div >
-<main>
-  <article>
-    <h1> Um pouco sobre mim: </h1>
-      <p>Meu nome é Igor Gabriel Folle Londero, tenho 22 anos de idade,  estou cursando Análise e Desenvolvimento de sistemas na <a href="https://www.upf.br/" target="_blank">Universidade de Passo Fundo</a>(UPF).</p>
-        <h3> O que estou buscando / meu objetivo:</h3>
-        <p>Quero aprender o máximo possível sobre programação como támbem buscar oportunidades para aplicar meus conhecimentos em projetos reais e continuar evoluindo como desenvolvedor.  </p>
+<!-- Conteúdo principal -->
+<main class="container my-4 bg-dark">
+  <!-- Sobre mim -->
+  <article class="mb-4 bg-dark">
+    <h2 class=" bg-dark">Um pouco sobre mim:</h2>
+    <p>Meu nome é Igor Gabriel Folle Londero, tenho 22 anos, e estou cursando Análise e Desenvolvimento de Sistemas na 
+       <a href="https://www.upf.br/" target="_blank" class="email">Universidade de Passo Fundo (UPF)</a>.</p>
 
-        <h3>Como cheguei até a programação:</h3>
+    <h3 class="bg-dark">O que estou buscando / meu objetivo:</h3>
+    <p>Quero aprender o máximo possível sobre programação, buscar oportunidades para aplicar meus conhecimentos em projetos reais e continuar evoluindo como desenvolvedor.</p>
 
-      <p>Sempre gostei de jogar videogame, e isso despertou minha curiosidade sobre como eles eram feitos. Agora, na faculdade, desenvolvi um grande interesse em entender como diferentes sistemas  são criados.</p>
+    <h3 class="bg-dark">Como cheguei até a programação:</h3>
+    <p>Sempre gostei de jogar videogame, o que despertou minha curiosidade sobre como eles eram feitos. Agora, na faculdade, desenvolvi grande interesse em entender como diferentes sistemas são criados.</p>
   </article>
- 
 
-<article class="article-baixo">
-  <h1> Entre em contato</h1>
-   <form>
-    <label for="nome">Nome: </label>
-      <input type="text" id="nome" name="Primeiro nome"><br>     
-        <label for="email">E-mail: </label>
-         <input type="text" id="email" name="sobrenome">
-          <p class="p-form">Feedback do site:</p> 
-          <label for="ruim">Ruim</label>
-            <input type="radio" id="ruim" name="feedback" value="ruim">
-          <label for="razoavel">Razoável</label>
-        <input type="radio" id="razoavel" name="feedback" >        
-    <br>
-      
-    <label for="bom">Bom</label>
-        <input type="radio" id="Bom" name="feedback">
+  <!-- Formulário de contato -->
+  <article class="mb-4 bg-dark">
+    <h2 class="bg-dark">Entre em contato</h2>
+    <form>
+      <div class="mb-3 bg-dark">
+        <label for="nome" class="form-label bg-dark">Nome:</label>
+        <input type="text" class="form-control" id="nome" name="nome">
+      </div>
 
-        <p class="p-form"></p> 
+      <div class="mb-3 bg-dark">
+        <label for="email" class="form-label bg-dark">E-mail:</label>
+        <input type="email" class="form-control b" id="email" name="email">
+      </div>
 
-          <textarea  placeholder="Digite aqui..." name="mensagem" rows="10" cols="30"></textarea>
-           
-          <button class="borda" type="submit" onclick="alert('Feedback enviado!')">Enviar</button>
-  </form>
-  
-  <br>  
-  <br>
-  
+      <div class="mb-3 bg-dark">
+        <p class="mb-1 bg-dark">Feedback do site:</p>
+        <div class="form-check form-check-inline bg-dark">
+          <input class="form-check-input bg-dark" type="radio" name="feedback" id="ruim" value="ruim">
+          <label class="form-check-label bg-dark" for="ruim">Ruim</label>
+        </div>
+        <div class="form-check form-check-inline bg-dark">
+          <input class="form-check-input bg-dark" type="radio" name="feedback" id="razoavel" value="razoavel">
+          <label class="form-check-label bg-dark" for="razoavel">Razoável</label>
+        </div>
+        <div class="form-check form-check-inline bg-dark">
+          <input class="form-check-input bg-dark" type="radio" name="feedback" id="bom" value="bom">
+          <label class="form-check-label bg-dark" for="bom">Bom</label>
+        </div>
+      </div>
+
+      <div class="mb-3 bg-dark">
+        <label for="mensagem" class="form-label bg-dark">Mensagem:</label>
+        <textarea class="form-control bg-dark" id="mensagem" name="mensagem" rows="6" placeholder="Digite aqui..."></textarea>
+      </div>
+
+      <button style="border: solid; border-color:  rgb(41, 84, 95); background-color:  rgb(41, 84, 95);" type="submit" class="btn btn-primary" onclick="alert('Feedback enviado!')">Enviar</button>
+    </form>
   </article>
-  </main>
+</main>
 
-  
-  <br>
-  <br>
-</div>
-  <footer>
+<!-- Rodapé -->
+<footer class="text-center py-3">
   <a href="https://github.com/Igor-F-Londero" target="_blank">
     <img src="IMG/github.png" width="33" alt="github">
   </a>
-   
   <a href="https://www.linkedin.com/in/igor-gabriel-folle-londero-a1181937a/" target="_blank">
     <img src="IMG/—Pngtree—linkedin white icon_3570423.png" width="40" alt="linkedin">
   </a>
-  
   <a href="https://steamcommunity.com/profiles/76561198438161385" target="_blank">
     <img src="IMG/logo steam button.png" width="40" alt="steam">
   </a>
-  
-  <a>
-    <img src="IMG/gmail.png" width="35">igorflondero@gmail.com
+  <a class="email" href="mailto:igorflondero@gmail.com">
+    <img src="IMG/gmail.png" width="35" alt="gmail"> E-mail
   </a>
-  </footer>
+</footer>
 
-  <script src="/JS/main.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/JS/main.js"></script>
 </body>
 </html>

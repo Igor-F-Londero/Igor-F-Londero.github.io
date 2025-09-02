@@ -1,76 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hobby</title>
-    <link href="CSS/hobbyy.css" rel="stylesheet">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobby</title>
+  <link href="CSS/hobbyy.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS (framework de estilos responsivos) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-<div class="container">    
-    <nav>
-        <a  href="index.html"><img src="IMG/img botão home.png" width="40" height="40" alt="home-botão"> </a>
-        <a class="borda" href="sobre.html">Sobre </a>
-        <a class="borda" href="projetos.html">Projetos</a>
-        <a class="borda" href="album.html">Construindo...</a>
-        <button class="borda" id="temaclaro">ligar luzes</button>
-    </nav>
-</div>      
-<div class="containr">
-    <header>
-        <h1 class="h1h"> Meus Hobbyes</h1>
-    </header>
-</div>
-    <main>
-       
-            
-        <ul>
-            <li>
-                <h3>  Atividades Físicas e Esportes</h3>
-            </li>
+<body class="bg-dark text-light"><!-- bg-dark = fundo escuro | text-light = texto claro -->
 
-             <p>Tenho uma grande paixão por esportes. Gosto de praticar corrida, que me  dá uma sensação de liberdade e superação pessoal, e basquete, que me       desafia com trabalho em equipe e agilidade.
-        Além de praticar, também sou fã de assistir futebol, especialmente os jogos da Champions League e dos principais campeonatos europeus, onde o nível técnico e a emoção das partidas me encantam.</p>
+<!-- Navbar Bootstrap (menu de navegação fixo no topo) -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm bg-dark">
+  <div class="container bg-dark">
+    <!-- Marca/Logo -->
+    <a class="navbar-brand fw-bold text-primary bg-dark" href="index.html">
+      <img src="IMG/img botão home.png" width="40" height="40" alt="home-botão" class="img-fluid">
+    </a>
 
-            <li>
-               <h3>    Leitura e Conhecimento </h3>
-            </li>
-                <p>Ler é uma das minhas formas favoritas de viajar sem sair do lugar. Tenho um interesse especial por livros de filosofia, história e sociologia — temas que me ajudam a entender melhor o mundo, as ideias e as transformações sociais ao longo do tempo.</p>
+    <!-- Botão hamburger (colapsa em telas pequenas) -->
+    <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavHobby">
+      <span class="navbar-toggler-icon bg-dark"></span>
+    </button>
 
-            <li>
-               <h3>  Música e Café </h3>
-            </li>
-                <p>Sou apaixonado por música — ela está presente no meu dia a dia, seja para relaxar, focar ou simplesmente curtir o momento. E sempre com um bom café, que considero quase um ritual de  concentração.</p>
+    <!-- Itens do menu -->
+    <div class="collapse navbar-collapse bg-dark" id="navbarNavHobby">
+      <ul class="navbar-nav ms-auto bg-dark">
+        <li class="nav-item bg-dark"><a class="nav-link" href="sobre.html">Sobre</a></li>
+        <li class="nav-item bg-dark"><a class="nav-link" href="projetos.html">Projetos</a></li>
+        <li class="nav-item bg-dark"><a class="nav-link" href="album.html">Construindo...</a></li>
+        <li class="nav-item bg-dark">
+          <button id="temaclaro" class="btn btn-sm btn-primary ms-2" 
+                  style="border: solid; border-color: rgb(41, 84, 95); background-color: rgb(41, 84, 95);">
+            Ligar luzes
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-            <li>
-                <h3>Jogos</h3>
+<!-- Cabeçalho principal -->
+<header class="text-center mt-5 pt-5">
+  <h1 class="h1h">Meus Hobbyes</h1>
+</header>
 
-            </li>
-            <p>Os jogos fazem parte do meu lazer, gosto especialmente de Counter-Strike, mas também mergulho nas histórias envolventes de Assassin’s Creed Diablo V e The Witcher, que combinam ação, exploração e tramas ricas. Esses jogos despertam meu interesse por história, fantasia e tomada de decisões.</P>
+<!-- Conteúdo principal -->
+<main class="container my-4 bg-dark">
+  <ul class="list-unstyled bg-dark">
+    <!-- Atividades Físicas e Esportes -->
+    <li class="mb-3 bg-dark bg-dark">
+      <h3 class="bg-dark">Atividades Físicas e Esportes</h3>
+      <p>Tenho uma grande paixão por esportes. Gosto de praticar corrida, que me dá uma sensação de liberdade e superação pessoal, e basquete, que me desafia com trabalho em equipe e agilidade. Além de praticar, também sou fã de assistir futebol, especialmente os jogos da Champions League e dos principais campeonatos europeus, onde o nível técnico e a emoção das partidas me encantam.</p>
+    </li>
 
-    </main>
- 
+    <!-- Leitura e Conhecimento -->
+    <li class="mb-3 bg-dark">
+      <h3 class="bg-dark">Leitura e Conhecimento</h3>
+      <p>Ler é uma das minhas formas favoritas de viajar sem sair do lugar. Tenho um interesse especial por livros de filosofia, história e sociologia — temas que me ajudam a entender melhor o mundo, as ideias e as transformações sociais ao longo do tempo.</p>
+    </li>
 
-  <footer>
+    <!-- Música e Café -->
+    <li class="mb-3 bg-dark">
+      <h3 class="bg-dark">Música e Café</h3>
+      <p>Sou apaixonado por música — ela está presente no meu dia a dia, seja para relaxar, focar ou simplesmente curtir o momento. E sempre com um bom café, que considero quase um ritual de concentração.</p>
+    </li>
+
+    <!-- Jogos -->
+    <li class="mb-3 bg-dark">
+      <h3 class="bg-dark">Jogos</h3>
+      <p>Os jogos foram a razão de me interessar por programação, fazem parte do meu lazer, gosto especialmente de Counter-Strike, mas também mergulho nas histórias envolventes de Assassin’s Creed, Diablo V e The Witcher, que combinam ação, exploração e tramas ricas. Esses jogos despertam meu interesse por história, fantasia e tomada de decisões.</p>
+    </li>
+  </ul>
+</main>
+
+<!-- Rodapé -->
+<footer class="text-center py-3">
   <a href="https://github.com/Igor-F-Londero" target="_blank">
     <img src="IMG/github.png" width="33" alt="github">
   </a>
-   
   <a href="https://www.linkedin.com/in/igor-gabriel-folle-londero-a1181937a/" target="_blank">
     <img src="IMG/—Pngtree—linkedin white icon_3570423.png" width="40" alt="linkedin">
   </a>
-  
   <a href="https://steamcommunity.com/profiles/76561198438161385" target="_blank">
     <img src="IMG/logo steam button.png" width="40" alt="steam">
   </a>
-  
-  <a>
-    <img src="IMG/gmail.png" width="35">igorflondero@gmail.com
+  <a class="email" href="mailto:igorflondero@gmail.com">
+    <img src="IMG/gmail.png" width="35" alt="gmail"> E-mail
   </a>
-  </footer>
-   
-<script src="/JS/main.js"></script>
+</footer>
 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/JS/main.js"></script>
 </body>
 </html>

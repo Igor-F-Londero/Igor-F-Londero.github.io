@@ -1,6 +1,7 @@
 
 *{
     background-color: rgb(22, 22, 22);
+    color: whitesmoke;
 }
 
 .container{
@@ -10,6 +11,14 @@
   position: sticky;
   top: 0%;
 }
+
+
+.email{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+
 nav{
     padding: 2%;
     position: sticky; 
