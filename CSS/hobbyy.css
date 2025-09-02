@@ -171,7 +171,7 @@ img{
     
    
 }
-/* Tema claro  */
+/* Tema claro  
 body.temaClaro .borda {
   background-color:rgb(41, 84, 95) !important;
   color: whitesmoke !important;
@@ -202,7 +202,6 @@ body.temaClaro header {
 
 }
 
-/* Aplica a cor do fundo apenas no footer e seus filhos, sem forçar todos a virarem "flex" */
 body.temaClaro footer {
   background-color: rgb(41, 84, 95) !important;
   color: whitesmoke !important;

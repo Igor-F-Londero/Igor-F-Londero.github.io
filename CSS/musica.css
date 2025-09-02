@@ -153,55 +153,55 @@ img{
    
 }
 
-/* Tema claro */
+/* Tema claro 
 body.temaClaro {
   background-color: gainsboro;
 }
 
-/* Texto e fundo geral */
+/* Texto e fundo geral 
 body.temaClaro * {
   background-color: inherit;
   color: black;
 }
 
-/* Links */
+
 body.temaClaro a {
   color: black;
 }
 
-/* Cabeçalho */
+
 body.temaClaro header {
   background-color: gainsboro !important;
   color: black !important;
-  background-image: url(/IMG/header\ img.png); /* mantém imagem */
+  background-image: url(/IMG/header\ img.png); 
   text-shadow: none !important;
 }
 
-/* Título no header */
+
 body.temaClaro .h1h {
   color: black !important;
   background-color: transparent !important;
 }
 
-/* Navegação */
+
 body.temaClaro nav {
   background-color: rgb(211, 211, 211) !important;
   color: black !important;
 }
 
-/* Borda destaque */
+
 body.temaClaro .borda {
   background-color: rgb(41, 84, 95) !important;
   color: whitesmoke !important;
   border-color: rgb(41, 84, 95) !important;
 }
 
-/* Imagens */
+
 body.temaClaro img {
   border-color: rgb(41, 84, 95) !important;
 }
 
-/* Seções article */
+
 body.temaClaro .article-baixo,
 body.temaClaro .article-cima {
   background-color: #e0e0e0 !important;
@@ -209,13 +209,13 @@ body.temaClaro .article-cima {
   border-color: rgb(41, 84, 95) !important;
 }
 
-/* Main */
+
 body.temaClaro main {
   color: black;
 }
 
 
-/* Footer */
+
 body.temaClaro footer {
   background-color: rgb(41, 84, 95) !important;
   color: whitesmoke !important;
@@ -226,7 +226,7 @@ body.temaClaro footer * {
   color: whitesmoke !important;
 }
 
-/* Botões */
+
 body.temaClaro button {
   background-color: rgb(41, 84, 95) !important;
   color: whitesmoke !important;

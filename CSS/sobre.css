@@ -170,7 +170,7 @@ img{
 
 
 /* === Tema Claro === */
-body.temaClaro {
+/*body.temaClaro {
   background-color: gainsboro;
 }
 
@@ -180,32 +180,32 @@ body.temaClaro * {
 }
 
 /* Links */
-body.temaClaro a {
+/*body.temaClaro a {
   color: black;
 }
 
 /* Cabeçalho */
-body.temaClaro header {
+/*body.temaClaro header {
   background-color: gainsboro !important;
   color: black !important;
-  background-image: url(/IMG/header\ img.png); /* mantém a imagem */
+  background-image: url(/IMG/header\ img.png); /* mantém a imagem 
   text-shadow: none !important;
 }
 
 /* Título no header */
-body.temaClaro .h1h {
+/*body.temaClaro .h1h {
   color: white !important;
   background-color: transparent !important;
 }
 
 /* Navegação */
-body.temaClaro nav {
+/*body.temaClaro nav {
   background-color: rgb(211, 211, 211) !important;
   color: black !important;
 }
 
 /* Botões com classe borda */
-body.temaClaro .borda {
+/*body.temaClaro .borda {
   background-color: rgb(41, 84, 95) !important;
   color: whitesmoke !important;
   border-color: rgb(41, 84, 95) !important;
@@ -213,12 +213,12 @@ body.temaClaro .borda {
 }
 
 /* Imagens */
-body.temaClaro img {
+/*body.temaClaro img {
   border-color: rgb(41, 84, 95) !important;
 }
 
 /* Artigos */
-body.temaClaro .article-baixo,
+/*body.temaClaro .article-baixo,
 body.temaClaro .article-cima {
   background-color: #e0e0e0 !important;
   color: black !important;
@@ -228,12 +228,12 @@ body.temaClaro .article-cima {
 }
 
 /* Main */
-body.temaClaro main {
+/*body.temaClaro main {
   color: black;
 }
 
 /* Formulário */
-body.temaClaro form,
+/*body.temaClaro form,
 body.temaClaro input,
 body.temaClaro textarea {
   background-color: gainsboro !important;
@@ -241,7 +241,7 @@ body.temaClaro textarea {
 }
 
 /* Footer */
-body.temaClaro footer {
+/*body.temaClaro footer {
   background-color: rgb(41, 84, 95) !important;
   color: whitesmoke !important;
   text-decoration: none !important;
@@ -253,7 +253,7 @@ body.temaClaro footer * {
 }
 
 /* Botões */
-body.temaClaro button {
+/*body.temaClaro button {
   background-color: rgb(41, 84, 95) !important;
   color: whitesmoke !important;
 }

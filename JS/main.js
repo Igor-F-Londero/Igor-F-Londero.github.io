@@ -1,16 +1,3 @@
-function temaclaro(){
-  var botao = document.getElementById('temaclaro');
-
-  botao.addEventListener('click', () => {
-    document.body.classList.toggle('temaClaro');
-    if (document.body.classList.contains('temaClaro')){
-    botao.textContent = 'apagar luzes';
-    } else{
-      botao.textContent = 'ligar luzes';
-    }
-  })
-}
-temaclaro();
 
 function atualizaRelogio(){
 

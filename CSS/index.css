@@ -178,7 +178,7 @@ body.temaClaro .relogio {
 }
 
 
-/* Tema claro */
+/* Tema claro 
 body.temaClaro, body.temaClaro * {
   background-color:gainsboro !important;
   color: rgb(0, 0, 0) !important;
@@ -186,7 +186,7 @@ body.temaClaro, body.temaClaro * {
   
 }
 
-/* Botão com visual inverso no modo claro */
+
 body.temaClaro .borda {
     
     border-radius: 15px !important;
@@ -195,12 +195,11 @@ body.temaClaro .borda {
     justify-content: center;
 }
 
-/* Links */
+
 body.temaClaro a {
   color:rgb(41, 84, 95);
 }
 
-/* Header com fundo neutro se imagem sumir */
 body.temaClaro header {
   
   background-color: transparent;
@@ -229,14 +228,13 @@ body.temaClaro .h1h {
     align-items: center;   
 }
 
-/* Aplica a cor do fundo apenas no footer e seus filhos, sem forçar todos a virarem "flex" */
 body.temaClaro footer {
   background-color: rgb(41, 84, 95) !important;
   color: whitesmoke !important;
 }
 
 body.temaClaro footer * {
-  background-color: inherit !important; /* faz os filhos herdarem o fundo do footer, sem sobrescrever um por um.*/
+  background-color: inherit !important; 
   color: whitesmoke !important;
   letter-spacing: 1px;
 }
